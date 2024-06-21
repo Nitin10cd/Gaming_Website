@@ -1,0 +1,107 @@
+.SnakeParent {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    background-image: url('snakegame.jpg');
+
+    background-position: center;
+
+    background-size: cover;
+
+    font-family: Arial, sans-serif;
+
+}
+
+
+
+.wrapper {
+
+    width: 80%;
+
+    max-width: 600px;
+
+    background-color: #000000;
+
+    padding: 20px;
+
+    border-radius: 8px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.gameDetails {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.playBoard {
+
+    display: grid;
+
+    grid-template-columns: repeat(30, 20px); /* Adjust column size as needed */
+
+    grid-template-rows: repeat(30, 20px); /* Adjust row size as needed */
+
+    gap: 1px; /* Gap between grid items */
+
+    border: 1px solid #ddd; /* Border for the game board */
+
+    background-color: #eee; /* Background color for the game board */
+
+    border-radius: 4px;
+
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+
+}
+
+
+
+.snake, .food {
+
+    width: 100%;
+
+    height: 100%;
+
+}
+
+
+
+.snake {
+
+    background-color: #4CAF50; /* Green color for snake */
+
+}
+
+
+
+.food {
+
+    background-color: #FF5722; /* Orange color for food */
+
+}
+
+
+
+.score {
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+}
