@@ -1,0 +1,181 @@
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+
+body {
+
+  /* background-image: url("castle.jpg");
+
+  background-position: center;
+
+  background-size: cover; */
+
+}
+
+.sudokuParent{
+
+  width: 100%;
+
+  height: 100vh;
+
+  background-image: url("brain.jpg");
+
+  background-position: center;
+
+  background-size: cover;
+
+}
+
+.mainContainer {
+
+  margin-left: 57%;
+
+  padding-top: 100px;
+
+  transform: translateX(-50%);
+
+}
+
+
+
+.Empty {
+
+  background: rgb(0, 0, 0);
+
+}
+
+
+
+.container {
+
+  display: grid;
+
+  max-width: fit-content;
+
+  grid-template-columns: repeat(9, 40px);
+
+
+
+}
+
+
+
+.child {}
+
+
+
+p {
+
+  font-weight: bold;
+
+  padding-top: 20px;
+
+  font-family: cursive;
+
+  font-size: 20px;
+
+}
+
+
+
+.mainContainer button {
+
+  width: 120px;
+
+  margin-top: 20px;
+
+  font-family: cursive;
+
+  height: 50px;
+
+  background: #000;
+
+  color: white;
+
+  border-radius: 20px;
+
+}
+
+
+
+input {
+
+  width: 40px;
+
+  /* Adjust width as needed */
+
+  height: 40px;
+
+  /* Adjust height as needed */
+
+  text-align: center;
+
+  background: transparent;
+
+  backdrop-filter: blur(200px);
+
+  -webkit-backdrop-filter: blur(200px);
+
+  font-size: 16px;
+
+  
+
+  /* Adjust font size as needed */
+
+  border: 1px solid #fffafa;
+
+  /* Add border for clarity */
+
+}
+
+
+
+input[type='number']::-webkit-inner-spin-button,
+
+input[type='number']::-webkit-outer-spin-button {
+
+  -webkit-appearance: none;
+
+  margin: 0;
+
+}
+
+
+
+input[type='number'] {
+
+  -moz-appearance: textfield;
+
+  color: rgb(0, 0, 0);
+
+  font-weight: bolder;
+
+}
+
+
+
+input:focus {
+
+  outline: none;
+
+  border-color: blue;
+
+  /* Change border color when focused */
+
+}
+
+
+
+.correct-input {
+
+  background-color: lightgreen;
+
+}
